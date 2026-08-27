@@ -21,8 +21,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "node init && tsup",
+    "dev": "node init && tsup --watch",
     "typecheck": "tsc --noEmit",
     "typecheck:examples": "tsc -p examples/router-swap/tsconfig.json",
     "test": "vitest --run",
@@ -50,10 +50,12 @@
     "@stellar/stellar-sdk": "^13.3.0",
     "@types/node": "^20.0.0",
     "@typescript-eslint/parser": "^8.65.0",
+    "dotenv": "^8.2.0",
     "eslint": "^8.57.0",
     "fast-check": "^3.18.0",
     "jsdom": "^24.1.1",
     "msw": "^2.15.0",
+    "node-fetch": "^3.3.2",
     "rimraf": "^5.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.4.0",
